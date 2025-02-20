@@ -32,14 +32,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun start() {
-        for(i in 1..6){
+
+        Toast.makeText(this, getString(R.string.text_bienvenida), Toast.LENGTH_LONG).show()
+
+        for(i in 1..12){
             val btnCard = findViewById<View>(
                 resources.getIdentifier("card$i", "id", this.packageName)
             ) as ImageButton
             btnCard.setOnClickListener(this)
             btnCard.setBackgroundResource(R.drawable.icon_pregunta)
         }
-        gameOverCard = (1 .. 6).random()
+        gameOverCard = (1 .. 12).random()
 
         Log.d("El valor de la carta", "La carta perdedora es ${gameOverCard.toString()}")
     }
@@ -61,7 +64,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             Toast.makeText(this, getString(R.string.text_game_over), Toast.LENGTH_LONG).show()
 
-            for(i in 1..6){
+            for(i in 1..12){
                 val btnCard = findViewById<View>(
                     resources.getIdentifier("card$i", "id", this.packageName)
                 ) as ImageButton
@@ -78,6 +81,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             ) as ImageButton
             btnCard.setBackgroundResource(R.drawable.icon_cheems)
         }
+
     }
 
     override fun onClick(v: View) {
@@ -88,8 +92,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.card4 -> { flip(4)}
             R.id.card5 -> { flip(5)}
             R.id.card6 -> { flip(6)}
-
+            R.id.card7 -> { flip(7)}
+            R.id.card8 -> { flip(8)}
+            R.id.card9 -> { flip(9)}
+            R.id.card10 -> { flip(10)}
+            R.id.card11 -> { flip(11)}
+            R.id.card12 -> { flip(12)}
 
         }
+
     }
 }
+
+
+
+
+
+
+

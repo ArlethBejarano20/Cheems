@@ -32,6 +32,11 @@
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -40,12 +45,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/card4"
-            android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:layout_weight="1" />
 
         <ImageButton
             android:id="@+id/card5"
@@ -59,6 +58,47 @@
             android:layout_height="130dp"
             android:layout_weight="1" />
 
+        <ImageButton
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/card8"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/card9"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/card10"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/card11"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/card12"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
     <Button
@@ -66,4 +106,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_restart" />
+
+    <Button
+        android:id="@+id/button_girar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_girar"/>
+
 </LinearLayout>
