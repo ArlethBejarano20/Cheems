@@ -100,6 +100,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.card12 -> { flip(12)}
 
         }
+
     }
 }
 
